@@ -1,0 +1,87 @@
+<html>
+<head>
+<title>Login</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+<script type="text/javascript">
+function cekData()
+{
+	// Cek isi kotak teks username
+	if (login.admin_nama.value == "")
+	{
+		alert("Username Harus Di Isi");
+		login.admin_nama.focus();
+		return false;
+	}
+
+	// Cek isi kotak teks password
+	if (login.admin_password.value == "")
+	{
+		alert("Password Harus Di Isi");
+		login.admin_password.focus();
+		return false;
+	}
+
+	// Cek isi kotak teks username
+	if (login.admin_nama.value != "HDYGF")
+	{
+		alert("Username Salah");
+		login.admin_nama.focus();
+		return false;
+	}
+
+	// Cek isi kotak teks password
+	if (login.admin_password.value != "HDYGF")
+	{
+		alert("Password Salah");
+		login.admin_password.focus();
+		return false;
+	}
+	else return true;
+}
+</script>
+</head>
+
+<body>
+	<center>
+		<div id="utama">
+			<div id="header">			
+			</div>
+
+			
+
+			<div>
+				<br>
+					<center><p><font color="white" face="Hobo Std">Welcome To My Website :)</font></p></center>
+					<center><p><font color="white" face="Hobo Std">Silahkan Login terlebih Dahulu</font></p></center>
+				</br>
+				<form id="login" method="post" action="Home.html" onsubmit="return cekData();">
+					<table width="100" id="table" align=center>
+						<tr>
+							<td><font color="white">E-mail</td>
+							<td> : </font></td>
+							<td><input type="text" name="admin_nama" id="admin_nama" placeholder="Masukan username" /></td>
+						</tr>
+						<tr>
+							<td><font color="white">Password</td>
+							<td> : </font></td>
+							<td><input type="password" name="admin_password" id="admin_password" placeholder="Masukan password" /></td>
+						</tr>
+						<tr>
+							<td><font color="white">Silahkan</td>
+							<td> : </font></td>
+							<td><input type="submit" name="submit" id="submit" value="Login" /></td>
+						</tr>
+					</table>
+				</form>
+				<br>
+			</div>
+
+		</div>
+		<div style="margin-top:20px;clear:both"><br><br></div>
+	</div>
+	<div class="footer">
+			<marquee behavior="alternate">Created by Hadeyega.com</marquee>
+		</div>
+</center>
+</body>
+</html>

@@ -1,0 +1,254 @@
+<html>
+<head>
+	<script src="script.js"></script>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<title>Toko Stiker.com</title><link href="image/logo.png" rel="shotcut icon">
+	<script type="text/javascript">
+		function pesan(jml,harga)
+		{		
+				var a = parseInt(jml);
+				var b = parseInt(harga);
+				var c = a * b;
+				var d = 0.3 * c;
+				var e = 0.1 * c;
+			if (jml!='')
+			{
+				if (c > 500000)
+				{
+				alert('Jumlah Bayar = '+ c);
+				alert('Discount 30% = '+ d);
+				alert('Jumlah Bayar = ' + (c - d));
+				}
+				else if (c > 250000)
+				{
+				alert('Jumlah Bayar = '+ c);
+				alert('Discount 10% = '+ e);
+				alert('Jumlah Bayar = ' + (c - e));
+				}
+				else 
+				{
+				alert('Anda Tidak Mendapat Discount');
+				alert('Jumlah Bayar Anda = '+ c);
+				}
+			}
+			else
+			{
+			alert('Tidak Boleh Kosong');
+			}
+			
+		}
+			
+		function cekAngka(angka){
+			if (isNaN(angka)) {
+				alert('inputan hanya angka');
+			};
+		}
+	</script>
+</head>
+
+<body onload="displayTime();setInterval('displayTime()', 1000);">
+	<center>
+		<div id="utama">
+			<div id="header">			
+			</div>
+
+			<div id='cat-nav' align='center'>
+				<ul class='fl' id='secnav'>
+					<li><a href="home.html">Home</a></li>
+					<li>
+						<a href="harga.html">Pilihan Barang</a>
+						<ul id='sub-custom-nav'>	
+							<li><a href="harga.html">Product</a></li>							
+							<li><a href="contact.html">Contact</a></li>
+						</ul>
+					</li>
+					<li><a href="about.html">About Us</a></li>
+					<li><a href="saran.html">Kritik Saran</a></li>
+				</ul>
+			</div>
+
+			<div id="konten">
+				<div class="barang">
+					<table class="kontak">
+						<tr>
+							<td rowspan="3"><img src="image/1.JPG" class="foto" /></td>
+							<td>Jenis</td>
+							<td>:</td>
+							<td>Jaker</td>
+						</tr>
+						<tr>
+							<td>Harga</td>
+							<td>:</td>
+							<td>Rp 52.000</td>
+						</tr>
+						<tr>
+
+							<td colspan="3">
+								<input type="text" id ="p1" placeholder="Jumlah Pesanan" onkeyup="cekAngka(this.value)" />							
+								<input type="button" value="Order Now" onclick="pesan(p1.value,'52000');p1.value='';" />
+							</td>
+						</tr>
+					</table>
+				</div>
+
+				<div class="barang">
+					<table class="kontak">
+						<tr>
+							<td rowspan="3"><img src="image/2.JPG" class="foto" /></td>
+							<td>Jenis</td>
+							<td>:</td>
+							<td>Jaker</td>
+						</tr>
+						<tr>
+							<td>Harga</td>
+							<td>:</td>
+							<td>Rp 52.000</td>
+						</tr>
+						<tr>
+
+							<td colspan="3">
+								<input type="text" id ="p2" placeholder="Jumlah Pesanan" onkeyup="cekAngka(this.value)" />							
+								<input type="button" value="Order Now" onclick="pesan(p2.value,'52000');p2.value='';" />
+							</td>
+						</tr>
+					</table>
+				</div>
+
+				<div class="barang">
+					<table class="kontak">
+						<tr>
+							<td rowspan="3"><img src="image/3.JPG" class="foto" /></td>
+							<td>Jenis</td>
+							<td>:</td>
+							<td>Jaker</td>
+						</tr>
+						<tr>
+							<td>Harga</td>
+							<td>:</td>
+							<td>Rp 52.000</td>
+						</tr>
+						<tr>
+
+							<td colspan="3">
+								<input type="text" id ="p3" placeholder="Jumlah Pesanan" onkeyup="cekAngka(this.value)"/>							
+								<input type="button" value="Order Now" onclick="pesan(p3.value,'52000');p3.value='';" />
+							</td>
+						</tr>
+					</table>
+				</div>
+
+				<div class="barang">
+					<table class="kontak">
+						<tr>
+							<td rowspan="3"><img src="image/4.JPG" class="foto" /></td>
+							<td>Jenis</td>
+							<td>:</td>
+							<td>Jaker</td>
+						</tr>
+						<tr>
+							<td>Harga</td>
+							<td>:</td>
+							<td>Rp 52.000</td>
+						</tr>
+						<tr>
+
+							<td colspan="3">
+								<input type="text" id ="p4" placeholder="Jumlah Pesanan" onkeyup="cekAngka(this.value)"/>							
+								<input type="button" value="Order Now" onclick="pesan(p4.value,'52000');p1.value='';" />
+							</td>
+						</tr>
+					</table>
+				</div>
+
+				<div class="barang">
+					<table class="kontak">
+						<tr>
+							<td rowspan="3"><img src="image/7.JPG" class="foto" /></td>
+							<td>Jenis</td>
+							<td>:</td>
+							<td>Jaker</td>
+						</tr>
+						<tr>
+							<td>Harga</td>
+							<td>:</td>
+							<td>Rp 52.000</td>
+						</tr>
+						<tr>
+
+							<td colspan="3">
+								<input type="text" id ="p5" placeholder="Jumlah Pesanan" onkeyup="cekAngka(this.value)"/>							
+								<input type="button" value="Order Now" onclick="pesan(p5.value,'52000');p2.value='';" />
+							</td>
+						</tr>
+					</table>
+				</div>
+
+				<div class="barang">
+					<table class="kontak">
+						<tr>
+							<td rowspan="3"><img src="image/8.JPG" class="foto" /></td>
+							<td>Jenis</td>
+							<td>:</td>
+							<td>Jaker</td>
+						</tr>
+						<tr>
+							<td>Harga</td>
+							<td>:</td>
+							<td>Rp 52.000</td>
+						</tr>
+						<tr>
+
+							<td colspan="3">
+								<input type="text" id ="p6" placeholder="Jumlah Pesanan" onkeyup="cekAngka(this.value)"/>							
+								<input type="button" value="Order Now" onclick="pesan(p6.value,'52000');p3.value='';" />
+							</td>
+						</tr>
+					</table>
+				</div>
+
+				<div class="barang">
+					<table class="kontak">
+						<tr>
+							<td rowspan="3"><img src="image/(1).JPG" class="foto" /></td>
+							<td>Jenis</td>
+							<td>:</td>
+							<td>Jaker</td>
+						</tr>
+						<tr>
+							<td>Harga</td>
+							<td>:</td>
+							<td>Rp 52.000</td>
+						</tr>
+						<tr>
+
+							<td colspan="3">
+								<input type="text" id ="p7" placeholder="Jumlah Pesanan" onkeyup="cekAngka(this.value)"/>							
+								<input type="button" value="Order Now" onclick="pesan(p7.value,'52000');p3.value='';" />
+							</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+			<br>
+			<div id="iklan">
+				<label id="jam"></label>
+				<hr style="border:solid 2px black">	
+				<div id="iklanSub">
+					<div id="iklan1">
+						<img src="image/iklan/tiki.jpg" class="iklan" >
+						<img src="image/iklan/tiki2.jpg" class="iklan" >
+						<img src="image/iklan/tiki3.jpg" class="iklan" >
+						<img src="image/iklan/tiki4.jpg" class="iklan" >
+						<img src="image/iklan/tiki5.jpg" class="iklan" >						
+						<img src="image/iklan/tiki6.jpg" class="iklan" >						
+					</div>	
+				</div>
+			</div>
+			<div style="margin-top:20px;clear:both"><br><br></div>
+		</div>
+		<div class="footer">
+				<marquee behavior="alternate">Created by Hadeyega.com</marquee>
+			</div>
+	</center>
+</body>
+</html>>
